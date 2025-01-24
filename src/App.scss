@@ -50,7 +50,6 @@
   max-width: 1440px;
   max-height: 750px;
   margin: 0 auto;
-  cursor: pointer;
 
   .containerCard {
     margin: 25px;
@@ -79,6 +78,7 @@
     left: 425px;
     border-radius: 12px 0px 0px 0px;
     background: #d4d7de;
+    cursor: pointer;
 
     img {
       width: 280px;
