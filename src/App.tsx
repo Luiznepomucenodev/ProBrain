@@ -95,6 +95,7 @@ export default function App() {
   }
 
   const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
+    event.preventDefault()
     setPage(value);
   };
 
@@ -117,7 +118,7 @@ export default function App() {
               style={{ border: "none" }}
               options={
                 Array.from(
-                  new Set(pokemon?.data.map((pokemon) => pokemon.name))
+                  new Set(pokemon?.data?.map((pokemon) => pokemon?.name))
                 ) ?? []
               }
               className="input-search"
@@ -126,10 +127,12 @@ export default function App() {
               )}
               value={inputValue}
               onChange={(event: any, newValue: string | null) => {
+                event.preventDefault()
                 setInputValue(newValue);
               }}
               inputValue={inputValueComplete}
               onInputChange={(event, newInputValue) => {
+                event.preventDefault()
                 setInputValueComplete(newInputValue);
               }}
             />
