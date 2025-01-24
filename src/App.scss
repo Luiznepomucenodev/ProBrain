@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.input-search {
+  width: 403px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 36px;
+}
+.count{
+    display: flex;
+    margin: 20px 0px 20px 263px;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+  .select {
+    width: 589px;
+    height: 41px;
+    margin-left: 10px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  transition: background-color 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+  max-width: 1440px;
+  max-height: 750px;
+  margin: 0 auto;
+
+  .containerCard {
+    margin: 25px;
+    box-shadow: 0px 1px 4px 0px #89838370;
+
+    .footerCard {
+      width: 100%;
+      height: 90px;
+      padding: 20px;
+
+      .types {
+        float: left;
+      }
+
+      p {
+        float: right;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .card {
+    width: 280px;
+    height: 304px;
+    top: 442px;
+    left: 425px;
+    border-radius: 12px 0px 0px 0px;
+    background: #d4d7de;
+
+    img {
+      width: 280px;
+      height: 320px;
+      gap: 0px;
+      border-radius: 12px 12px 0px 0px;
+      opacity: 0px;
+    }
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customStyles {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  background: #fdfdfd;
+  width: 697px;
+  height: 788.17px;
+  border-radius: 13.13px;
+  border: none;
+
+  .headerModal {
+    display: flex;
+    justify-content: space-between;
+    width: 697px;
+    height: 84.25px;
+    gap: 0px;
+    border-radius: 13.13px 13.13px 0px 0px;
+    opacity: 0px;
+    background: #d0d0d066;
+
+    h2 {
+      position: relative;
+      width: 295.43px;
+      height: 38.3px;
+      top: 33.92px;
+      left: 201.33px;
+      gap: 0px;
+      opacity: 0px;
+      text-align: center;
+    }
+
+    span {
+      margin: auto 0px;
+      margin-right: 20px;
+      width: 14.22px;
+      height: 14.22px;
+      gap: 20px;
+      opacity: 0px;
+      :hover {
+        filter: brightness(0.5);
+        cursor: pointer;
+        transition: filter 0.3s ease-in-out;
+      }
+    }
+
+    img {
+      width: 14.22px;
+      height: 14.22px;
+      gap: 0px;
+      opacity: 0px;
+    }
+  }
+
+  #pokemon {
+    width: 195.59px;
+    height: 195.59px;
+    margin-top: 50px;
+    border-radius: 15.65px 0px 0px 0px;
+    border: 3.91px 0px 0px 0px;
+    opacity: 0px;
+  }
+
+  .info {
+    display: flex;
+    margin: 30px;
+    padding: 30px;
+    gap: 5.39px;
+    opacity: 0px;
+
+    div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      width: 139.17px;
+      height: 65.94px;
+      margin-right: 20px;
+
+      & + div {
+        border-left: 2px solid #e0e0e0;
+      }
+
+      span {
+        margin: auto;
+      }
+    }
+  }
+
+  .atkDef{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+
+    .weaknesses{
+        width: Hug (67.26px)px;
+        height: Hug (17.32px)px;
+        padding: 1.66px 6.63px 1.66px 6.63px;
+        border-radius: 8.29px 0px 0px 0px;
+        background: #D4D7DE;
+        border-radius: 8.29px;
+    }
+
+    p{
+        width: Hug (67.26px)px;
+        height: Hug (17.32px)px;
+        padding: 1.66px 6.63px 1.66px 6.63px;
+        border-radius: 8.29px 0px 0px 0px;
+        background: #AFB1B6;
+        border-radius: 8.29px;
+
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  color: #D4D7DE;
+}
+
+@media  (max-width: 768px) {
+    .filters {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        input{
+            margin: 50px 0px 50px 0px;
+        }
+      }
+}

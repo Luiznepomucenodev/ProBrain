@@ -1,0 +1,40 @@
+.headerContainer{
+
+    box-shadow: 0px 4px 4px 0px #00000040;
+    
+
+}
+h1{
+    color: red;
+}
+
+.headerContent{
+    max-width: 90rem;
+    height: 145px;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+
+    nav {
+        margin-left: auto;
+        height: 5rem;
+
+        a {
+            color: black;
+            text-decoration: none;
+            line-height: 5rem;
+        }
+    }
+
+    button {
+        margin-left: auto;
+    }
+}
+
+@media  (max-width: 768px) {
+    .headerContainer {
+        width: 100%;
+      }
+}
